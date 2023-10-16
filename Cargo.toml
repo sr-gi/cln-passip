@@ -1,0 +1,15 @@
+[package]
+name = "cln-passip"
+version = "0.1.0"
+authors = ["Sergi Delgado Segura <sergi.delgado.s@gmail.com>"]
+edition = "2021"
+description = """
+A minimal reproducible plugin to test passing IPs trough RPC to CLN
+"""
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = { version = "1.0" }
+cln-plugin = "0.1.6"
+tokio = { version = "1.5", features = [ "rt-multi-thread", "fs" ] }
